@@ -5,9 +5,10 @@
  <meta charset="utf-8">
 </head>
 <body>
- <section class="floor1">
-  <nav class="nav">
+ <section class="welcome-page">
+  <header class="head">
    <div class="logo"></div>
+   <nav class="nav">
    <a class="nav__link" href="ModelS.html">Model S</a>
    <a class="nav__link" href="ModelX.html">Model X</a>
    <a class="nav__link" href="Model3.html">Model 3</a>
@@ -22,41 +23,40 @@
     <span class="burger__icon"></span>
    </div>
   </nav>
-  <header class="title">
-   <p class="title__model">Model S</p>
-   <p class="title__ave">Добро пожаловать в будущее!</p>
   </header>
-  <div class="floor1__wordmark"></div>
-  <div class="floor1__tesla_png"></div>
-  <div class="params">
-   <div class="acceleration">
+  <h1 class="title">Model S</h1>
+  <h2 class="subtitle">Добро пожаловать в будущее!</h2>
+  <div class="welcome-page__wordmark"></div>
+  <div class="welcome-page__tesla_png"></div>
+  <div class="feature">    
+   <div class="params">
     <img class="speedo-icon" src="./img/speedo.svg">
-    <p class="acceleration__time">2,7<span class="acceleration__time-units">сек</span></p>
-    <p class="acceleration__distance">0-100 км/час</p>
+    <p class="params__time">2,7<span class="params__time-units">сек</span></p>
+    <p class="params__distance">0-100 км/час</p>
    </div>
-   <div class="pow-reserve">
+   <div class="params">
    	<img class="road_icon" src="./img/road-icon.svg">
-   	<p class="pow-reserve__distance">632<span class="pow-reserve__distance-value">км</span></p>
-   	<p class="pow-reserve__title">запас хода</p>
+   	<p class="params__distance">632<span class="params__distance-value">км</span></p>
+   	<p class="params__title">запас хода</p>
    </div>
   </div>
   <div class="test-drive">
   <img src="./img/test-drive.svg">
    <p class="test-drive__title">тест драйв</p>
   </div>
-  <button class="floor1__order">заказать</button>
+  <button class="welcome-page__order">заказать</button>
   <div class="scroll-down-icon">
    <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M3 3L17 17L31 3" stroke="#E51937" stroke-width="3" stroke-linecap="square"/>
    </svg>
   </div>
  </section>
- <section class="floor2">
-  <header class="floor2__head">Model S</header>
-  <section class="floor2-content">
-   <article class="floor2-info">
-    <h3 class="floor2-info__title">Будущее вождения</h3>
-    <p class="floor2-info__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+ <section class="advantages">
+  <header class="advantages__head">Model S</header>
+  <section class="advantages-content">
+   <article class="advantages-info">
+    <h3 class="advantages-info__title">Будущее вождения</h3>
+    <p class="advantages-info__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
    </article>
    <div class="display">
    	<img class="display__icon" src="./img/display-icon.svg">
@@ -73,15 +73,15 @@
    	<p class="bag-capacity__value">894<span class="bag-capacity__units">литра</span></p>
    	<p class="bag-capacity__title">Объем грузового пространтсва</p>
    </div>
-   <button class="floor2-discover"><img class="floor2-discover__icon" src="./img/discover-icon.svg">узнать больше</button>
-   <button class="floor2__order">заказать</button>
+   <button class="advantages-discover"><img class="advantages-discover__icon" src="./img/discover-icon.svg">узнать больше</button>
+   <button class="advantages__order">заказать</button>
   </section>
  </section>
- <section class="floor3">
-  <section class="floor3-content">
-  	<article class="floor3-info">
-     <h3 class="floor3-info__head">Самый безопасный автомобиль в мире</h3>
-     <p class="floor3-info__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+ <section class="security">
+  <section class="security-content">
+  	<article class="security-info">
+     <h3 class="security-info__head">Самый безопасный автомобиль в мире</h3>
+     <p class="security-info__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
   	</article>
   	<div class="rating">
   	 <h3 class="rating__title">Оценка защиты:</h3>
@@ -151,10 +151,10 @@
   		<p class="rating-result__value">5 звезд</p>
   		<p class="rating-result__text">безопасности</p>  	 
   	</div>
-  	<button class="floor3-discover"><img class="floor3-discover__icon" src="./img/discover-icon.svg">узнать больше</button>
-   <button class="floor3__order">заказать</button>
+  	<button class="security-discover"><img class="security-discover__icon" src="./img/discover-icon.svg">узнать больше</button>
+   <button class="security__order">заказать</button>
   </section>
-  <section class="floor3-pictures">
+  <section class="security-pictures">
    <div class="models-logo"></div>
    <div class="car-img">
    	<div class="protection_top">
