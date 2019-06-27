@@ -9,10 +9,7 @@
 .head {
  display: flex;
  justify-content: space-between;
- margin-top: 15px;
- margin-left: 35px; 
- margin-right: 43px;
- margin-bottom: 0px;
+ margin: 25px 43px 0px 35px;
 }
 
 .logo {
@@ -42,6 +39,10 @@
  text-decoration: underline red;
 }
 
+.nav-menu__link:hover {
+ color: #E51937;
+ text-decoration: underline red;
+}
 .side-menu {
  display: flex;
  align-items: center;
@@ -66,10 +67,12 @@
  text-decoration: underline red;
 }
 
-/*.side-menu__burger {
- position: relative;
+.side-menu__link:hover {
+ color: #E51937;
+ margin-right: 30px;
+ text-decoration: underline red;
 }
-*/
+
 /*TITLE SUBTITLE*/
 
 .title {
@@ -240,6 +243,8 @@
 }
 */
 .test-drive {
+ background: none;
+ border: none;
  display: inline-block;
  position: relative;
  margin-right: 25px;
@@ -269,6 +274,11 @@
  text-transform: uppercase;
 }
 
+.test-drive__title:hover {
+ color: #E51937;
+ text-decoration: underline #E51937;
+}
+
 .welcome-page__order {
  display: inline-block;
  position: relative;
@@ -285,6 +295,11 @@
  text-align: center;
  text-transform: uppercase;
  }
+
+.welcome-page__order:hover {
+ color: #FFFFFF;
+ background: #E51937;
+}
 
  .scroll-down-icon {
   position: relative;
@@ -306,7 +321,7 @@
  .head {
   display: flex;
   justify-content: space-between;
-  margin: 16px 0px;
+  margin: 24px 0px 0px;
  }
 
  .logo {
@@ -359,11 +374,11 @@
  /*PICTURE*/
 
  .welcome-page__wordmark {
-  min-width: 821px;
+  background-size: 821px;
+  width: 100%;
   margin: 0px auto;
   padding: 0px;
   position: relative;
-  right: 33px;
   bottom: 20px;
  }
  
@@ -398,11 +413,6 @@
   max-width: 221px;
  }
 
- .footer-button {
-  margin-top: 67px;
-  height: 56px;
-  width: 419px;
- }
 
  .params__time, .params__reserve {
   line-height: 61px;
@@ -454,11 +464,17 @@
   left: 11px;
  }
 
+ .footer-button {
+  margin-top: 64px;
+  height: 56px;
+  width: 430px;
+ }
+
  .test-drive {
  display: inline-block;
  position: relative;
- margin: 0px 25px 0px 0px;
- min-width: 163px;
+ margin: 3px 28px 0px 0px;
+ width: auto;
  min-height: 31px;
  }
 
@@ -477,7 +493,7 @@
   line-height: 20px;
   font-size: 16px; 
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
  }
  
  .welcome-page__order {
@@ -488,7 +504,7 @@
   height: 55px;
   width: 220px;
   position: relative;
-  left: 5px;
+  left: 3px;
   bottom: 5px;
  }
 
@@ -500,7 +516,7 @@
  }
 }	
 
-@media (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
  .welcome-page {
   position: relative;
   margin: 0px;
@@ -567,14 +583,15 @@
  /*PICTURE*/
 
  .welcome-page__wordmark {
-  min-width: 432px;
+  background-size: 435px;
+  width: 100%;
   margin: 0px auto 0px;
   position: relative;
-  right: 38px;
   top: 3px;
  }
  
  .welcome-page__tesla_png_img {
+  position: relative;
   top: 43px;
   width: 357px;
   height: 166px;
@@ -702,4 +719,199 @@
   width: 30px;
  }
 
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+ .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  min-height: 35px;
+  min-width: 310px;
+  position: relative;
+ }
+
+ .logo {
+  background-size: contain;
+  height: 38px;
+  width: 134px;
+  position: relative;
+  bottom: 3px;
+  right: 5px;
+ }
+
+ .nav-menu {
+  display: none;
+ }
+ 
+ .side-menu {
+  margin: 0px 11px 7px 0px;
+  width: 26px;
+  height: 17px;
+ }
+
+ .side-menu__link {
+  display: none;
+ }
+
+ .side-menu__burger {
+  width: 20px;
+  height: 11px;
+ }
+
+/*TITLE SUBTITLE*/
+
+ .title {
+  height: 55px;
+  position: relative;
+  margin: 27px auto 0px;
+  line-height: 61px;
+  font-size: 40px;
+  text-align: center;
+ }
+ 
+ .subtitle {
+  font-size: 8px;
+  line-height: 12px;
+  margin: 0px auto 0px;
+ }
+
+ /*PICTURE*/
+
+ .welcome-page__wordmark {
+  background-size: 355px;
+  width: 100%;
+  margin: 0px auto 0px;
+  position: relative;
+  top: 3px;
+ }
+ 
+ .welcome-page__tesla_png_img {
+  position: relative;
+  top: 43px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto 0px;
+ }
+
+ .footer {
+  margin: 63px auto 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 290px;
+ }
+
+ .params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  max-height: 60px;
+  max-width: 130px;
+ }
+ 
+ .feature {
+  width: 100%;
+ }
+
+ .params__time, .params__reserve {
+  line-height: 33px;
+  font-size: 24px;
+  margin: 0px;
+  height: 25px; 
+ }
+
+ .params__time {
+  position: relative;
+  left:3px;
+  top: 4px; 
+ }
+
+ .params__reserve {
+  position: relative;
+  left: 0px;
+  top: 4px;
+ }
+
+ .speedo-icon {
+  position: relative;
+  top: 0px;
+  left: 10px;
+  height: 25px;
+  width: 35px;
+ }
+
+ .road_icon {
+  position: relative;
+  top: 5px;
+  left: 6px;
+  height: 40px;
+  width: 25px;
+ }
+
+ .params__distance, .params__title {
+  position: relative;
+  top: 0px;
+  left: 3px;
+  font-size: 8px;
+  line-height: 12px;
+ }
+
+ .params__time-units, .params__reserve-value {
+  font-size: 13px;
+  line-height: 18px;
+  position: relative;
+  left: 8px;
+ }
+
+ .footer-button {
+  margin-top: 37px;
+  height: 41px;
+  width: 100%;
+ }
+
+ .test-drive {
+ display: inline-block;
+ position: relative;
+ margin: 0px 0px 0px 0px;
+ min-width: 110px;
+ min-height: 25px;
+ }
+
+ .test-drive__icon {
+  height: 18px;
+  width: 18px;
+ }
+
+ .test-drive__icon-collor {
+  fill: #E51937;	
+ }
+
+ .test-drive__title {
+  color: #E51937;
+  line-height: 14px;
+  font-size: 10px;
+  min-width: 50px;
+ }
+ 
+ .welcome-page__order {
+  color: #FFFFFF;
+  background: #E51937;
+  line-height: 16px;
+  font-size: 10px;
+  height: 36px;
+  width: 136px;
+  position: relative;
+  left: 8px;
+ }
+
+ .scroll-down-icon {
+  position: relative;
+  margin: 32px 47% 0px;
+  height: 18px;
+  width: 30px;
+ }
 }
