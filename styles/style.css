@@ -1,23 +1,19 @@
 .welcome-page {
- overflow: hidden;
-}
+  height: 100%;
+ }
 
 .head {
  display: flex;
  justify-content: space-between;
  align-items: center;
- position: relative;
- top: 16px;
- margin: 0px auto;
- width: 1337px;
+ margin-bottom: 58px;
+ padding: 16px 50px 0 35px;
 }
 
 .logo {
- background: url(../img/Tesla-Wordmark-Red.png) left;
+ background: url(../img/Tesla-Wordmark-Red.png);
  height: 51px;
  width: 166px;
- position: relative;
- right: 10px;
 }
 
 .nav-menu {
@@ -30,709 +26,363 @@
 
 .nav-menu__link {
  color: #000;
- text-decoration: underline white;
+ text-decoration: none;
+ position: relative;
 }
 
-.nav-menu__link:visited {
+.nav-menu__link:visited,
+.nav-menu__link:hover,
+.nav-menu__link:active,
+.nav-menu__link-active {
  color: #E51937;
- text-decoration: underline red;
 }
 
-.nav-menu__link:hover {
+.nav-menu__link:visited::after,
+.nav-menu__link:hover::after,
+.nav-menu__link:active::after,
+.nav-menu__link-active::after {
+ content: "";
  color: #E51937;
- text-decoration: underline red;
+ background: url(../img/underline.png) no-repeat;
+ background-position: 0 0;
+ height: 2px;
+ width: 60px;
+ position: absolute;
+ left: 0;
+ top: 25px;
 }
 
 .side-menu {
  font: normal 600 15px "MontserratFont";
+ width: 204px;
  display: flex;
- align-items: center;
  justify-content: space-between;
- color: #000;
- position: relative;
- right: 10px;
+ align-items: center;
 }
 
 .side-menu__link {
  color: #000;
- margin-right: 30px;
- text-decoration: underline white;
+ text-decoration: none;
+ position: relative;
 }
 
-.side-menu__link:visited {
+.side-menu__link:visited,
+.side-menu__link:hover,
+.side-menu__link:active {
  color: #E51937;
- margin-right: 30px;
- text-decoration: underline red;
 }
 
-.side-menu__link:hover {
+.side-menu__link:visited::after,
+.side-menu__link:hover::after,
+.side-menu__link:active::after {
+ content: "";
  color: #E51937;
- margin-right: 30px;
- text-decoration: underline red;
+ background: url(../img/underline.png) no-repeat;
+ height: 2px;
+ width: 60px;
+ position: absolute;
+ left: 0;
+ top: 25px;
 }
 
 .title {
- position: relative;
  color: #000;
  font: normal 600 90px/110px "MontserratFont";
  text-align: center;
- height: 89px; 
- margin-bottom: 0;
+ height: 90px; 
+ margin: 0;
 }
 
 .subtitle {		
  color: #000;
- height: 15px;
  font: normal 500 15px/18px "MontserratFont";
  text-align: center;
+ height: 15px;
 }
 
 .welcome-page__wordmark {
  background: url(../img/Tesla-Wordmark.png) no-repeat top;
- background-size: 1435px;
- width: 100%;
- margin: 0 auto 38px;
+ background-size: contain;
  text-align: center;
+ height: auto;
+ width: 100%;
  position: relative;
- bottom: 125px;
- padding: 0;
+ bottom: 123px;
+ margin-bottom: 38px;
 }
 
 .welcome-page__tesla_png_img {
-  position: relative;
-  top: 140px;
+ display: inline-block;
+ position: relative;
+ top: 140px;
+ margin: 0 auto;
 }
 
 .welcome-page-content {
  display: flex;
  justify-content: center;
  align-items: center;
- width: auto;
- margin-bottom: 38px;
+ margin-bottom: 37px;
 }
 
 .feature {
  display: flex;
- justify-content: space-between;
- margin-right: 5px;
- width: auto;
+ justify-content: space-around;
+ align-items: center;
+ margin-right: 15px;
 }
 
 .params {
  display: flex;
  justify-content: space-between;
  align-items: center;
- max-height: 56px;
- max-width: 154px;
- margin-right: 82px;
+ width: auto;
+ margin-right: 89px;
 }
 
 .speedo-icon {
- position: relative;
  height: 35px;
  width: 46px;
- margin-right: 15px;
+ margin-right: 14px;
 }
 
 .road_icon {
- position: relative;
- top: 2px;
  height: 50px;
- width: 30.5px;
- margin-right: 10px;
+ width: 31px;
+ margin-right: 11px;
 }
 
-.params-value {
- max-height: 58px
-}
-
-.params__time, .params__reserve {
- color: #000;
- display: inline-block;
+.params__time,
+.params__reserve {
  font: normal 600 35px/43px "MontserratFont";
- height: 37px;
  margin: 0;
- padding: 0;
 }
 
-.params__time-units, .params__reserve-value {
- color: #000;
+.params__time-units,
+.params__reserve-value {
  font: normal 600 20px/24px "MontserratFont";
- margin: 0px 6px;
+ position: relative;
+ left: 6px;
 }
 
-.params__distance, .params__title {
- color: #000;
- display: inline-block;
+.params__distance,
+.params__title {
  font: normal normal 12px/15px "MontserratFont";
  margin: 0;
- }
+}
 
 .content-button {
- position: relative;
- top: 3px;
- right: 2px;
+ display: flex;
+ justify-content: space-between;
 }
 
 .test-drive {
+ font: normal bold 13px/16px "MontserratFont";
  background: none;
  border: none;
- display: inline-block;
- position: relative;
- margin-right: 26px;
- width: 135px;
- }
+ text-transform: uppercase;
+ display: flex;
+ align-items: center;
+ margin-right: 34px;
+}
 
-.test-drive__icon {
- display:inline-block;
- position: relative;
- top: 6px;
+.test-drive:before {
+ content: "";
+ background: url(../img/test-drive.svg) no-repeat;
+ background-size: contain;
+ height: 22px;
+ width: 22px;
  margin-right: 7px;
+}
+
+.test-drive:hover::before {
+ content: "";
+ background: url(../img/test-drive-red.svg) no-repeat;
+ background-size: contain;
  height: 22px;
  width: 22px;
 }
 
-.test-drive__title {
- display:inline-block;
- position: relative;
- height: 18px;
- min-width: 89px;
- color: #000;
- font: normal bold 13px/16px "MontserratFont";
- text-align: center;
- text-transform: uppercase;
-}
-
-.test-drive__title:hover {
+.test-drive:hover {
  color: #E51937;
- text-decoration: underline #E51937;
 }
 
 .welcome-page__order {
- display: inline-block;
- position: relative;
+ font: normal bold 13px/16px "MontserratFont";
+ background: no-repeat;
+ border: solid 2px #E51937;
+ box-sizing: border-box;
+ color: #E51937;
  height: 40px;
  width: 160px;
- color: #E51937;
- background: none;
- border: solid #E51937;
- font: normal bold 13px/16px "MontserratFont";
- text-align: center;
  text-transform: uppercase;
- }
+}
 
 .welcome-page__order:hover {
  color: #FFF;
  background: #E51937;
 }
 
- .scroll-down-icon {
-  position: relative;
-  margin: 0px 50%;
-  height: 16px;
-  width: 30px;
-}
+.scroll-down-icon {
+  margin: 0 48%;
+  height: 20px;
+  width: 34px;
+ }
 
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
  .welcome-page {
-  overflow: hidden;
+  height: 100%;
  }
 
  .head {
   display: flex;
   justify-content: space-between;
-  width: 723px;
-  margin-bottom: 23px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 16px 25px 0 6px;
  }
 
  .logo {
   background: url(../img/Tesla-Wordmark-Red.png);
   height: 51px;
-  width: 150px;
+  width: 166px;
  }
-
- .nav-menu {
+ 
+ .nav-menu,
+ .side-menu__link {
   display: none;
  }
  
  .side-menu {
   display: flex;
   justify-content: flex-end;
- }
-
- .side-menu__link {
-  display: none;
+  align-items: center;
  }
 
  .side-menu__burger {
-  position: relative;
-  width: 35.23px;
-  height: 22.02px;
- }
-
- .title {
-  position: relative;
-  margin-bottom: 10px;
-  text-align: center;
-  height: 90px;
- }
- 
- .subtitle {
-  margin:  0;		
-  height: 15px;
-  font: 15px/18px; 
- }
-
- .welcome-page__wordmark {
-  background-size: 821px;
-  width: 100%;
-  margin: 0px auto 135px;
-  padding: 0;
-  position: relative;
-  bottom: 20px;
- }
- 
- .welcome-page__tesla_png_img {
-  background-size: contain;
-  overflow: hidden;
-  position: relative;
-  top: 110px;
-  width: 673px;
-  height: 328px;
-  margin: 0px auto;
- }
-
- .welcome-page-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
- }
-
- .feature {
-  display: flex;
-  justify-content: space-between;
-  min-width: 490px;
-  margin-bottom: 70px;
-  margin-right: 0;
- }
- 
- .params {
-  margin: 0;
-  min-width: 210px;
- }
-
- .params-value {
-  margin-bottom: 20px;
- }
-
- .params__time, .params__reserve {
-  font: normal 600 50px/61px "MontserratFont";
-  margin: 0;
- }
-
- .params__time-units, .params__reserve-value {
-  margin: 0;
-  position: relative;
-  left: 8px;
-  bottom: 8px;
- }
-
- .params__distance, .params__title {
-  position: relative;
-  top: 3px;
- }
-
- .speedo-icon {
-  margin-right: 20px;
-  height: 50px;
-  width: 105px;
- }
-
- .road_icon {
-  margin-right: 20px;
-  height: 71px;
-  width: 60px;
-  position: relative;
-  left: 7px;
-  top: 5px;
- }
-
- .content-button {
-  margin-bottom: 60px;
-  height: 56px;
-  width: 430px;
- }
-
- .test-drive {
- display: inline-block;
- position: relative;
- margin: 0;
- width: auto;
- min-height: 31px;
- }
-
- .test-drive__icon {
-  height: 31px;
-  width: 31px;
-  margin-right: 13px;
- }
-
- .test-drive__icon-collor {
-  fill: #E51937;	
- }
-
- .test-drive__title {
-  color: #E51937;
-  font: normal bold 16px/20px "MontserratFont";
-  margin-right: 33px;
- }
- 
- .welcome-page__order {
-  color: #FFF;
-  background: #E51937;
-  font: normal bold 16px/20px "MontserratFont";
-  height: 55px;
-  width: 220px;
- }
-
- .scroll-down-icon {
-  position: relative;
-  margin: 0 48%;
-  height: 18px;
-  width: 30px;
- }
-}	
-
-@media (min-width: 375px) and (max-width: 767px) {
- .head {
-  display: flex;
-  justify-content: space-between;
-  height: 35px;
-  width: 354px;
-  margin: 0 auto 35px;
-  position: relative;
-  top: 0;
- }
-
- .logo {
-  background-size: contain;
-  height: 42px;
-  width: 138px;
- }
-
- .nav-menu {
-  display: none;
- }
- 
- .side-menu {
-  margin: 0;
-  width: 26px;
-  height: 17px;
- }
-
- .side-menu__link {
-  display: none;
- }
-
- .side-menu__burger {
-  width: 24px;
-  height: 15px;
- }
-
- .title {
-  height: 55px;
-  position: relative;
-  margin: 0 auto 4px;
-  font: normal 600 50px/61px "MontserratFont";
-  text-align: center;
- }
- 
- .subtitle {
-  font: normal 500 10px/12px "MontserratFont";
-  margin: 0;
- }
-
- .welcome-page__wordmark {
-  background-size: 435px;
-  width: 100%;
-  margin: 0 auto 63px;
-  position: relative;
-  top: 3px;
- }
- 
- .welcome-page__tesla_png_img {
-  position: relative;
-  top: 43px;
-  width: 357px;
-  height: 166px;
-  margin: 0 auto;
- }
-
- .welcome-page-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
- }
-
- .feature {
-  display: flex;
-  justify-content: space-between;
-  height: 54px;
-  width: 291px;
-  margin: 0 auto 33px;
- }
- 
- .params {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-height: 54px;
-  max-width: 128px;
-  margin: 0;
- }
-
- .params__time, .params__reserve {
-  font: normal 600 27px/33px "MontserratFont";
-  margin: 0;
-  position: relative;
-  top: 0;
-  height: 27px;
- }
-
- .speedo-icon {
-  height: 28px;
-  width: 38px;
- }
-
- .road_icon {
-  height: 41px;
-  width: 26px;
-  position: relative;
-  left: 5px;
-  top: 0;
-  margin-right: 15px;
- }
-
- .params__distance, .params__title {
-  font: normal normal 10px/12px "MontserratFont";
-  margin: 0;
- }
-
- .params__time-units, .params__reserve-value {
-  font: normal 600 15px/18px "MontserratFont";
-  position: relative;
-  left: 0px;
- }
-
- .content-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 304px;
-  margin-bottom: 34px;
- }
-
- .test-drive {
- display: inline-block;
- position: relative;
- margin-right: 20px;
- min-width: 118px;
- min-height: 31px;
- }
-
- .test-drive__icon {
-  margin-right: 3px;
   height: 22px;
-  width: 22px;
- }
-
- .test-drive__icon-collor {
-  fill: #E51937;	
- }
-
- .test-drive__title {
-  color: #E51937;
- }
- 
- .welcome-page__order {
-  color: #FFF;
-  background: #E51937;
-  font: normal bold 13px/16px "MontserratFont";
-  height: 40px;
-  width: 160px;
-  position: relative;
-  right: 2px;
- }
-
- .scroll-down-icon {
-  position: relative;
-  margin: 0 48%;
-  height: 18px;
-  width: 30px;
- }
-}
-
-@media (min-width: 320px) and (max-width: 374px) {
- .head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 300px;
-  margin: 0 auto 27px;
-  position: relative;
-  top: 0;
- }
-
- .logo {
-  background-size: contain;
-  height: 38px;
-  width: 134px;
- }
-
- .nav-menu {
-  display: none;
- }
- 
- .side-menu {
-  margin: 0;
-  width: 26px;
-  height: 17px;
- }
-
- .side-menu__link {
-  display: none;
- }
-
- .side-menu__burger {
-  width: 20px;
-  height: 11px;
- }
-
- .title {
-  margin: 0 auto 5px;
-  font: normal 600 40px/61px "MontserratFont";
-  height: 42px;
- }
- 
- .subtitle {
-  font: normal 500 8px/12px "MontserratFont";
-  margin: 0;
+  width: 36px;
  }
 
  .welcome-page__wordmark {
-  background-size: 355px;
+  background: url(../img/Tesla-Wordmark.png) no-repeat center top;
+  background-size: 822px;
+  text-align: center;
   width: 100%;
-  margin: 0 auto 63px;
   position: relative;
-  top: 3px;
+  bottom: 30px;
+  margin-bottom: 112px;
  }
- 
+
  .welcome-page__tesla_png_img {
   position: relative;
-  top: 43px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  top: 108px;
+  width: 93%;
  }
 
  .welcome-page-content {
-  margin: 0 auto 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
  }
 
  .feature {
-  margin: 0 auto 30px;
-  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-right: 0;
+  width: 64%;
+  
  }
-
+ 
  .params {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  width: auto;
+  margin-right: 21px;
+ }
+ 
+ .speedo-icon {
+  height: 50px;
+  width: 66px;
+  margin-right: 20px;
+ }
+ 
+ .road_icon {
+  height: 72px;
+  width: 44px;
+  margin-right: 15px;
+  position: relative;
+  top: 3px;
  }
 
  .params-value {
-  margin: 0;
-  height: 45px;
- }
-
- .speedo-icon {
-  margin-right: 6px;
-  height: 25px;
-  width: 35px;
- }
-
- .road_icon {
-  margin-right: 6px;
-  height: 40px;
-  width: 25px;
+  padding-bottom: 9px;
  }
  
- .params__time, .params__reserve {
-  font: normal 600 24px/33px "MontserratFont";
+ .params__time,
+ .params__reserve {
+  font: normal 600 50px/61px "MontserratFont";
   margin: 0;
-  height: 25px;
  }
-
- .params__distance, .params__title {
-  font: normal normal 8px/12px "MontserratFont";
-  margin: 0;
+ 
+ .params__time-units,
+ .params__reserve-value {
   position: relative;
-  bottom: 4px;
+  left: 9px;
+  bottom: 6px;
  }
-
- .params__time-units, .params__reserve-value {
-  font: normal 600 13px/18px "MontserratFont";
-  position: relative;
-  left: 4px;
-  margin: 0;
- }
-
+ 
  .content-button {
-  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
  }
-
+ 
  .test-drive {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  min-width: 110px;
-  min-height: 25px;
- }
-
- .test-drive__icon {
-  margin-right: 5px;
-  height: 18px;
-  width: 18px;
- }
-
- .test-drive__icon-collor {
-  fill: #E51937;	
- }
-
- .test-drive__title {
+  font: normal bold 16px/20px "MontserratFont";
+  background: none;
+  border: none;
   color: #E51937;
-  font: normal bold 10px/14px "MontserratFont";
-  min-width: 50px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  padding: 0;
+ }
+ 
+ .test-drive:before {
+  content: "";
+  background: url(../img/test-drive-red.svg) no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 5px;
+  margin-right: 16px;
  }
  
  .welcome-page__order {
-  color: #FFF;
+  font: normal bold 16px/20px "MontserratFont";
   background: #E51937;
-  font: normal bold 10px/16px "MontserratFont";
-  height: 36px;
-  width: 136px;
+  border: solid 2px #E51937;
+  box-sizing: border-box;
+  color: #FFF;
+  height: 55px;
+  width: 221px;
+  text-transform: uppercase;
+  padding: 0;
  }
-
+ 
  .scroll-down-icon {
-  position: relative;
-  margin: 0 47%;
-  height: 18px;
-  width: 30px;
- }
+   margin: 0 50%;
+   height: 20px;
+   width: 34px;
+  }
+
 }
