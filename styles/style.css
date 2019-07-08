@@ -106,11 +106,10 @@
  background-size: 100% auto;
  text-align: center;
  width: 100%;
+ max-width: 1640px;
  position: relative;
  bottom: 120px;
  margin: 0 auto 38px;
-display: flex;
- justify-content: center;
 }
 
 .welcome-page__tesla_png_img {
