@@ -206,6 +206,12 @@
 
 .test-drive:hover {
  color: #E51937;
+ cursor: pointer;
+}
+
+.test-drive:active,
+.test-drive:focus {
+ outline: none;
 }
 
 .welcome-page__order {
@@ -221,7 +227,13 @@
 
 .welcome-page__order:hover {
  color: #FFF;
+ cursor: pointer;
  background: #E51937;
+}
+
+.welcome-page__order:active,
+.welcome-page__order:focus {
+ outline: none;
 }
 
 .scroll-down-icon {
@@ -424,7 +436,7 @@
  
  .title {
   color: #000;
-  font: normal 600 50px/61px "MontserratFont";
+  font: normal 600 52px/63px "MontserratFont";
   text-align: center;
   height: 51px; 
   margin: 0;
@@ -595,7 +607,7 @@
  
  .title {
   color: #000;
-  font: normal 600 45px/56px "MontserratFont";
+  font: normal 600 47px/58px "MontserratFont";
   text-align: center;
   height: 46px; 
   margin: 0;
@@ -603,7 +615,7 @@
 
  .subtitle {		
   color: #000;
-  font: normal 500 8px/10px "MontserratFont";
+  font: normal 500 10px/12px "MontserratFont";
   text-align: center;
   height: 8px;
  }
@@ -669,20 +681,20 @@
  
  .params__time,
  .params__reserve {
-  font: normal 600 25px/31px "MontserratFont";
+  font: normal 600 27px/33px "MontserratFont";
   margin: 0;
  }
  
  .params__time-units,
  .params__reserve-value {
-  font: normal 600 13px/16px "MontserratFont";
+  font: normal 600 15px/18px "MontserratFont";
   position: relative;
   left: 8px;
  }
 
  .params__distance,
  .params__title {
-  font: normal normal 8px/10px "MontserratFont";
+  font: normal normal 10px/12px "MontserratFont";
  }
 
  .content-button {
@@ -693,7 +705,7 @@
  }
  
  .test-drive {
-  font: normal bold 11px/14px "MontserratFont";
+  font: normal bold 12px/14px "MontserratFont";
   background: none;
   border: none;
   color: #E51937;
@@ -714,7 +726,7 @@
  }
  
  .welcome-page__order {
-  font: normal bold 11px/14px "MontserratFont";
+  font: normal bold 12px/14px "MontserratFont";
   background: #E51937;
   border: solid 2px #E51937;
   box-sizing: border-box;
