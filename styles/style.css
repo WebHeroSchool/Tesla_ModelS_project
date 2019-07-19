@@ -1,9 +1,12 @@
-body  {
- margin: 0;
+.container  {
+ margin: 0 auto;
+ min-width: 320px; 
+ max-width: 1440px;
 }
 
 .welcome-page {
   height: 100%;
+  width: 100%;
  }
 
 .head {
@@ -618,13 +621,6 @@ body  {
  left: 89%;
 }
 
-@media (min-width: 1548px) {
- .advantages-head {
-  background: url(../img/models-dashboar.png) no-repeat 50% 35%;
-  background-size: cover;
- }
-}
-
 @media (min-width: 1025px) and (max-width: 1353px) {
  .advantages-buttons {
   display: flex;
@@ -638,6 +634,16 @@ body  {
   margin-bottom: 15px;
  }
 
+ .security-content {
+  background: #E51937;
+  padding: 49px 16px 0 30px;
+ }
+
+ .security-info {
+  margin-bottom: 55px;
+  padding: 0;
+ }
+
  .security-pictures {
   background-size: auto 12%;
  }
@@ -646,11 +652,12 @@ body  {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center
+  align-items: center;	
+  margin-right: 16px;	 
  }
 
-  .security-button__discover {
-   margin-bottom: 15px;
+ .security-button__discover {
+   margin-bottom: 14px;
  }
 
  .rating {
@@ -658,15 +665,19 @@ body  {
  }
 
  .stars {
-  padding-right: 16px;
+  padding-right: 0;
  }
 
  .rating-result {
-  margin-right: 0;
+  margin-right: 14px;
  }
 
  .rating-result__icon {
   margin-right: 0;
+ }
+
+ .rating-result__value {
+  font: normal 600 48px/59px "MontserratFont";
  }
 
  .footer {
@@ -825,7 +836,7 @@ body  {
  }
  
  .scroll-down-icon {
-   margin: 0 50% 26px;
+   margin: 0 47% 26px;
    height: 20px;
    width: 34px;
   }
@@ -1049,7 +1060,7 @@ body  {
  .car-frame {
   background: url(../img/car-frame-mobile.png) no-repeat 50% 50%;
   background-size: 97% auto;
-  max-width: 1000px;
+  max-width: 980px;
   min-width: 750px;
   position: relative;
   top: 3%;
@@ -1062,7 +1073,7 @@ body  {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
- body {
+ .container {
   margin: 0;
  }
 
@@ -1230,7 +1241,7 @@ body  {
  }
  
  .scroll-down-icon {
-   margin: 0 48% 26px;
+   margin: 0 45% 26px;
    height: 20px;
    width: 34px;
   }
@@ -1505,7 +1516,7 @@ body  {
  }
  
  .scroll-down-icon {
-   margin: 0 48%;
+   margin: 0 44%;
    height: 20px;
    width: 34px;
  }
